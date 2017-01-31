@@ -1,0 +1,22 @@
+{
+    "name": "marahuyo/tuple",
+    "description": "Allows laravel eloquent to return a key value pair data as property",
+    "keywords": ["eloquent", "laravel" , "key value pair"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nikku Ang",
+            "email": "nikkuang@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+    },
+    "autoload": {
+        "psr-4": {
+            "Marahuyo\\Tuple\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
