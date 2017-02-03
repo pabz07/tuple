@@ -36,7 +36,7 @@ trait UsesKeyValuePair {
      */
     public function toArrayKeyValuePair()
     {
-        if( !$this->isDirty() ) { 
+        if( !$this->isDirty() ) {
             $item = new static;
             $item->{ $this->{ $this->getMetaKeyColumn() } } = $this->{ $this->getMetaValueColumn() };
             return $item->toArray();

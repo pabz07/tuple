@@ -6,10 +6,11 @@
     "authors": [
         {
             "name": "Nikku Ang",
-            "email": "nikkuang@gmail.com"
+            "email": "nikku.anthony.ang@gmail.com"
         }
     ],
     "require": {
+        "illuminate/support": "4.2.*",
         "php": ">=5.4",
     },
     "autoload": {

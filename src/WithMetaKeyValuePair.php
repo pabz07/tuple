@@ -1,4 +1,4 @@
-<?php namespace Marahuyo\Tuple\Eloquent;
+<?php namespace Marahuyo\Tuple;
 
 use Marahuyo\Tuple\Eloquent\Relationship\HasMeta;
 
