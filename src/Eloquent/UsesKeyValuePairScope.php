@@ -3,9 +3,10 @@
 namespace Marahuyo\Tuple\Eloquent;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\ScopeInterface;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Scope;
 
-class UsesKeyValuePairScope implements ScopeInterface {
+class UsesKeyValuePairScope implements Scope {
 
      /**
       * All of the extensions to be added to the builder.
@@ -15,12 +16,12 @@ class UsesKeyValuePairScope implements ScopeInterface {
     protected $extensions = [ 'GetAsAttribute' ];
 
     /**
-	 * Apply the scope to a given Eloquent query builder.
-	 *
-	 * @param  \Illuminate\Database\Eloquent\Builder  $builder
-	 * @return void
-	 */
-	public function apply(Builder $builder)
+     * Apply the scope to a given Eloquent query builder.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder $builder
+     * @param Model                                  $model
+     */
+	public function apply(Builder $builder, Model $model)
     {
         $this->extend($builder);
     }

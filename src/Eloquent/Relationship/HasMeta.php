@@ -77,7 +77,7 @@ class HasMeta extends HasOneOrMany {
 	{
 		$dictionary = array();
 
-		$foreign = $this->getPlainForeignKey();
+		$foreign = $this->getForeignKeyName();
 
 		foreach ($results as $result)
 		{
